@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rda:carrierTypeManifestation
+        xmlns:rda="http://rdvocab.info/Elements/"
+        xmlns:rdg2="http://rdvocab.info/ElementsGr2/"
+        xmlns:rdg3="http://rdvocab.info/ElementsGr3/"
+        xmlns:frbr="http://iflastandards.info/ns/fr/frbr/frbrer/"
+        xmlns:role="http://rdvocab.info/roles/"
+        >
+    <frbr:C1001>
+        <rda:identifierForTheWork uri="http://example.com/w1234" />
+        <rda:titleOfTheWork>
+            Hamlet. French
+        </rda:titleOfTheWork>
+        <rda:formOfWork>
+            Text
+        </rda:formOfWork>
+        <role:author>
+            <frbr:Person>
+                <nameOfThePerson>
+                    Omescu, Ion
+                </nameOfThePerson>
+            </frbr:Person>
+        </role:author>
+        <!-- frbr:is realized through -->
+        <frbr:P2001 uri="http://example.com/E78765" />
+        <!-- is subect (work) of -->
+        <frbr:P2036>
+            Shakespeare, William, 1564-1616. Hamlet
+        </frbr:P2036>
+        <frbr:P2036>
+            PR2807 .O45 1987
+        </frbr:P2036>
+        <frbr:P2036>
+            822.3/3
+        </frbr:P2036>
+    </frbr:C1001>
+    <!-- frbr Expression -->
+    <frbr:C1002>
+        <rda:identifierForTheExpression uri="http://example.com/E78765" />
+        <rda:languageOfTheContentExpression>
+            fre
+        </rda:languageOfTheContentExpression>
+        <!-- expresses work -->
+        <frbr:P2002 uri="http://example.com/W1234" />
+        <!-- is manifested in -->
+        <frbr:P2003 uri="http://example.com/M385620" />
+    </frbr:C1002>
+    <!-- frbr Manifestation -->
+    <frbr:C1003>
+        <rda:identifierForTheManifestation uri="http://example.com/M385620" />
+        <rda:identifierForTheManifestation>
+            ISBN 2130401309
+        </rda:identifierForTheManifestation>
+        <rda:carrierTypeManifestation>
+            volume
+        </rda:carrierTypeManifestation>
+        <rda:mediaTypeManifestation>
+            unmediated
+        </rda:mediaTypeManifestation>
+        <rda:contentTypeManifestation>
+            text
+        </rda:contentTypeManifestation>
+        <rda:titleProperManifestation>
+            Hamlet, ou, La tentation du possible
+        </rda:titleProperManifestation>
+        <rda:otherTitleInformationManifestation>
+            essai
+        </rda:otherTitleInformationManifestation>
+        <statementOfResponsibilityManifestation>
+            Ion Omesco ; avant-propos d'Henri Gouhier.
+        </statementOfResponsibilityManifestation>
+        <designationOfEditionManifestation>
+            1re éd.
+        </designationOfEditionManifestation>
+        <publicationStatementManifestation>
+            <placeOfPublicationManifestation>
+                Paris
+            </placeOfPublicationManifestation>
+            <publishersNameManifestation>
+                Presses universitaires de France
+            </publishersNameManifestation>
+            <dateOfPublicationManifestation>
+                c1987
+            </dateOfPublicationManifestation>
+        </publicationStatementManifestation>
+        <variantTitleManifestation>
+            Tentation du possible
+        </variantTitleManifestation>
+        <extentOfTextManifestion>
+            ix, 278 pages
+        </extentOfTextManifestion>
+        <dimensionsManifestation>
+            21 cm
+        </dimensionsManifestation>
+        <noteManifestation>
+            Includes index.
+        </noteManifestation>
+        <noteManifestation>
+            Bibliography: p. [269]-270.
+        </noteManifestation>
+        <seriesStatement>
+            Littératures modernes
+        </seriesStatement>
+        <!-- manifests -->
+        <frbr:P2004 uri="http://example.com/E78765" />
+        <!-- is exemplified by item -->
+        <frbr:P2005 uri="http://example.com/I293546203" />
+    </frbr:C1003>
+    <!-- frbr Item -->
+    <frbr:C1004>
+        <frbr:identifierForTheItem uri="http://example.com/I293546203" />
+        <!-- is exemplar of -->
+        <frbr:P2006 uri="http://example.com/M385620" />
+    </frbr:C1004>
+</rda:carrierTypeManifestation>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Taken from http://id.loc.gov/ontologies/bibframe-category.html-->
+<collections>
+    <content type="printed book">
+        <title>
+            <mainTitle>Learning XML</mainTitle>
+            <variantType>Second Edition</variantType>
+        </title>
+        <agent type="Author"></agent>
+    </content>
+</collections>
