@@ -1,0 +1,52 @@
+@import "colors";
+@import "mixins";
+
+@function double($a){
+    @return ($a*2);
+}
+
+body{
+    background-color: darken($bg-color, 50%);
+}
+
+h1{
+    color: $theme-color;
+}
+p{
+    color: $theme-color;
+}
+.content{
+    ul{
+        li{
+            a{
+                color: magenta;
+            }
+        }
+    }
+}
+
+button{
+    background-color: brown;
+    @include BlockButton(white);
+}
+
+.btn1{
+    background-color: green;
+    @include BlockButton(yellow);
+}
+
+.container{
+    width: 100%;
+    .leftcol{
+        float: left;
+        background-color: red;
+        height: 100px;
+        width: (100% / 2);
+    }
+    .rightcol{
+        float: right;
+        background-color: blue;
+        height: double(50px);
+        width: (100% / 2);
+    }
+}
